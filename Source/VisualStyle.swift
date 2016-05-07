@@ -74,28 +74,6 @@ public protocol VisualStyle {
 
 extension VisualStyle {
 
-    public var contentPadding: UIEdgeInsets { return UIEdgeInsets(top: 36, left: 16, bottom: 12, right: 16) }
-
-    public var parallax: UIOffset { return UIOffset(horizontal: 15.75, vertical: 15.75) }
-
-    public var backgroundColor: UIColor? { return nil }
-
-    public var verticalElementSpacing: CGFloat { return 24 }
-
-    public var actionHighlightColor: UIColor { return UIColor(white: 0.8, alpha: 0.7) }
-    public var actionViewSeparatorColor: UIColor { return UIColor(white: 0.5, alpha: 0.5) }
-    public var actionViewSeparatorThickness: CGFloat { return 1 / UIScreen.mainScreen().scale }
-
-    public func textColor(forAction action: AlertAction?) -> UIColor? {
-        return action?.style == .Destructive ? UIColor.redColor() : nil
-    }
-
-    public var textFieldFont: UIFont { return UIFont.systemFontOfSize(13) }
-    public var textFieldHeight: CGFloat { return 25 }
-    public var textFieldBorderColor: UIColor {
-        return UIColor(red: 64/255, green: 64/255, blue: 64/255, alpha: 1)
-    }
-    public var textFieldMargins: UIEdgeInsets { return UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4) }
 }
 
 @objc(SDCDefaultVisualStyle)
@@ -153,4 +131,28 @@ public class DefaultVisualStyle: NSObject, VisualStyle {
                 return UIFont.systemFontOfSize(20)
         }
     }
+
+    public var contentPadding: UIEdgeInsets { return UIEdgeInsets(top: 36, left: 16, bottom: 12, right: 16) }
+    
+    public var parallax: UIOffset { return UIOffset(horizontal: 15.75, vertical: 15.75) }
+    
+    public var backgroundColor: UIColor? { return nil }
+    
+    public var verticalElementSpacing: CGFloat { return 24 }
+    
+    public var actionHighlightColor: UIColor { return UIColor(white: 0.8, alpha: 0.7) }
+    public var actionViewSeparatorColor: UIColor { return UIColor(white: 0.5, alpha: 0.5) }
+    public var actionViewSeparatorThickness: CGFloat { return 1 / UIScreen.mainScreen().scale }
+    
+    public func textColor(forAction action: AlertAction?) -> UIColor? {
+        return action?.style == .Destructive ? UIColor.redColor() : nil
+    }
+    
+    public var textFieldFont: UIFont { return UIFont.systemFontOfSize(13) }
+    public var textFieldHeight: CGFloat { return 25 }
+    public var textFieldBorderColor: UIColor {
+        return UIColor(red: 64/255, green: 64/255, blue: 64/255, alpha: 1)
+    }
+    public var textFieldMargins: UIEdgeInsets { return UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4) }
+
 }
