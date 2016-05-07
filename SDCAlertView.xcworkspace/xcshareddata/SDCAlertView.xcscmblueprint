@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6780DC99A6A04A79936E449885C870311076070A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "51C9F3FC19837B3FE1A5CFCC395A9360CBC0DAB7" : 0,
+    "6780DC99A6A04A79936E449885C870311076070A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4C781588-E869-413F-8F9D-94A7D2F7D46A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "51C9F3FC19837B3FE1A5CFCC395A9360CBC0DAB7" : "",
+    "6780DC99A6A04A79936E449885C870311076070A" : "SDCAlertView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SDCAlertView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SDCAlertView.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:johnbrayton\/subscribe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "51C9F3FC19837B3FE1A5CFCC395A9360CBC0DAB7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sberrevoets\/SDCAlertView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6780DC99A6A04A79936E449885C870311076070A"
+    }
+  ]
+}
