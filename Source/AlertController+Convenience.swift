@@ -8,7 +8,7 @@ public extension AlertController {
     - parameter actionTitle: An optional action for the alert
     - parameter customView:  An optional view that will be displayed in the alert's `contentView`
 
-    - returns: The alert that was presented.
+    - returns: The alert.
     */
     public class func alertWithTitle(title: String? = nil, message: String? = nil, actionTitle: String? = nil,
         customView: UIView? = nil) -> AlertController
@@ -20,7 +20,6 @@ public extension AlertController {
             alertController.contentView.addSubview(customView)
         }
 
-        alertController.present()
         return alertController
     }
 
@@ -31,14 +30,13 @@ public extension AlertController {
      - parameter message: An optional message for the action sheet
      - parameter actions: The titles of the actions in the action sheet
 
-     - returns: The action sheet that was presented.
+     - returns: The action sheet
      */
     public class func sheetWithTitle(title: String? = nil, message: String? = nil, actions: [String])
         -> AlertController
     {
         let alertController = AlertController(title: title, message: message, preferredStyle: .ActionSheet)
         actions.forEach { alertController.addAction(AlertAction(title: $0, style: .Default)) }
-        alertController.present()
         return alertController
     }
 
@@ -48,13 +46,12 @@ public extension AlertController {
      - parameter view:    The view that should be displayed in the action sheet
      - parameter actions: The titles of the actions in the action sheet
 
-     - returns: The action sheet that was presented.
+     - returns: The action sheet
      */
     public class func sheetWithView(view: UIView, actions: [String]) -> AlertController {
         let alertController = AlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
         actions.forEach { alertController.addAction(AlertAction(title: $0, style: .Default)) }
         alertController.contentView.addSubview(view)
-        alertController.present()
         return alertController
     }
 }

@@ -201,11 +201,12 @@ public class AlertController: UIViewController {
     - parameter animated:   Whether to present the alert in an animated fashion
     - parameter completion: An optional closure that's called when the presentation finishes
     */
-    @objc(presentAnimated:completion:)
-    public func present(animated animated: Bool = true, completion: (() -> Void)? = nil) {
-        let topViewController = UIViewController.topViewController()
-        topViewController?.presentViewController(self, animated: animated, completion: completion)
-    }
+    // jb: removing because it calls code (UIViewController.topViewController()) that is not extension-safe.
+//    @objc(presentAnimated:completion:)
+//    public func present(animated animated: Bool = true, completion: (() -> Void)? = nil) {
+//        let topViewController = UIViewController.topViewController()
+//        topViewController?.presentViewController(self, animated: animated, completion: completion)
+//    }
 
     /**
      Dismisses the alert.
